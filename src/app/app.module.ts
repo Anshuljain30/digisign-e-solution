@@ -6,6 +6,11 @@ import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { ContactUsComponent } from "./components/contact-us/contact-us.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { ClassTwoComponent } from './components/class-two/class-two.component';
+import { ClassThreeComponent } from './components/class-three/class-three.component';
+import { DownloadsComponent } from './components/downloads/downloads.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -13,8 +18,12 @@ import { FooterComponent } from "./components/footer/footer.component";
     NavbarComponent,
     ContactUsComponent,
     FooterComponent,
+    ClassTwoComponent,
+    ClassThreeComponent,
+    DownloadsComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

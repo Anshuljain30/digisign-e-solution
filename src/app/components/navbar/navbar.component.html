@@ -1,5 +1,115 @@
-<div class="bg-gray-800 text-white flex items-center p-4 text-2xl">
+<!-- <div class="bg-gray-800 text-white flex items-center p-4 text-2xl">
   <div class="px-4">
     DigiSign E Solution
   </div>
-</div>
+</div> -->
+<nav class="bg-gray-800">
+  <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="block h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+            (click)="toggleMenu()"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between"
+      >
+        <div class="flex-shrink-0 flex items-center">
+          <a class="text-white text-2xl" routerLink="">DigiSign E Solution</a>
+        </div>
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex space-x-4">
+            <a
+              routerLink="class2"
+              routerLinkActive="bg-gray-900 text-white"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium"
+              >Class 2 Digital Signature</a
+            >
+
+            <a
+              routerLink="class3"
+              routerLinkActive="bg-gray-900 text-white"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium"
+              >Class 3 Digital Signature</a
+            >
+
+            <a
+              routerLink="downloads"
+              routerLinkActive="bg-gray-900 text-white"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium"
+              >Downloads</a
+            >
+
+            <a
+              routerLink="contact-us"
+              routerLinkActive="bg-gray-900 text-white"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div
+    class="sm:hidden absolute w-full bg-gray-800 rounded-b-md"
+    id="mobile-menu"
+  >
+    <div class="px-2 pt-2 pb-3 space-y-1" [hidden]="showMobileMenu">
+      <a
+        (click)="toggleMenu()"
+        routerLink="class2"
+        routerLinkActive="bg-gray-900 text-white"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >Class 2 Digital Signature</a
+      >
+
+      <a
+        (click)="toggleMenu()"
+        routerLink="class3"
+        routerLinkActive="bg-gray-900 text-white"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >Class 3 Digital Signature</a
+      >
+
+      <a
+        (click)="toggleMenu()"
+        routerLink="downloads"
+        routerLinkActive="bg-gray-900 text-white"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >Downloads</a
+      >
+
+      <a
+        (click)="toggleMenu()"
+        routerLink="contact-us"
+        routerLinkActive="bg-gray-900 text-white"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >Contact Us</a
+      >
+    </div>
+  </div>
+</nav>
